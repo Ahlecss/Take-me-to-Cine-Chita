@@ -1,0 +1,248 @@
+@font-face {
+  font-family: 'TommyLight';
+  src: url('../src/assets/fonts/TommyLight.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TommyRegular';
+  src: url('../src/assets/fonts/TommyRegular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TommyMedium';
+  src: url('../src/assets/fonts/TommyMedium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TommyBold';
+  src: url('../src/assets/fonts/TommyBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'TommyBlack';
+  src: url('../src/assets/fonts/TommyBlack.otf') format('opentype');
+}
+
+html, body{
+  color: white;
+  font-family: 'TommyLight';
+  font-weight: 900;
+  background: #333;
+  height: 100%;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+
+    li{
+      list-style: none;
+    }
+  }
+}
+
+article{
+  margin: 45px 0;
+}
+
+.interactif{
+  position: relative;
+  z-index: 1000;
+}
+
+#mask{
+  background: url('https://media.giphy.com/media/yoJC2B1sHdXJjPTnEs/giphy.gif') no-repeat;
+  background-size: cover;
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+
+.title{
+  font-size: 140px;
+  text-align: center;
+  font-family: 'TommyBlack';
+  color: #ff1744;
+}
+
+.title_moving{
+  animation: scale 2.5s ease-in 1;
+}
+
+.button_moving{
+  animation: lessOpacity 2.5s ease-in 1;
+}
+
+p{
+  color: #ffe3e7;
+  font-size: 18px;
+  text-align: center;
+  max-width: 75vw;
+  line-height: 2;
+}
+.box_enter_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.button{
+  min-width: auto;
+  font-size: 26px;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #ff1744;
+  border-radius: 3rem;
+  transition: .8s cubic-bezier(.2,1,.2,1);
+  color: #fff7f8;
+  text-transform: uppercase;
+  text-shadow: none;
+  white-space: normal;
+  background-clip: border-box;
+  font-family: "TommyMedium";
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(-45deg,#e66465, #ff1744);
+  
+
+  &:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px 0 rgba(#fff7f8,.25);  
+  }
+}
+.emoji_word{
+  font-size: 28px;
+  font-family: 'TommyBold';
+  transition: all ease 0.5s;
+
+  &:hover{
+    font-size: 36px;
+  }
+}
+
+.theme{
+  color: hsl(348, 100%, 55%);
+  font-size: 110px;
+  line-height: 100px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-shadow: 1px 0 0 #f0bcc4,3px 3px 2px #a50f2c,4px 4px 0 #ffe3e7;
+}
+
+.UXpage, .Devpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out 1;
+
+}
+
+.cursor{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  object-fit: fill;
+}
+
+img{
+  //width: 150px;
+  //height: 150px;
+}
+
+.award:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🏆</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.eyes:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.england:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🇬🇧</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.usa:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🇺🇸</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.paint:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🎨</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.paper:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>📝</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.dimension:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🖼️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.pin:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>📍</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.light:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>💡</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.road:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🛣️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.triangle:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>📐</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.computer:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>💻</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.grow:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🌺</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.tree:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🌲</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.ticket:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>🎟️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.phone:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>📱</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+.reuse:hover{
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='120' viewport='0 0 400 400' style='fill:black;font-size:66px;'><text y='50%'>♻️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+@keyframes scale {
+  0% { transform: scale(1) }
+  60% { opacity: 1;}
+  100% { transform: scale(10); opacity: 0; }
+}
+
+@keyframes lessOpacity {
+  60% { opacity: 1;}
+  100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
